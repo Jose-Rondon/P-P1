@@ -239,7 +239,7 @@ body    {
 
 .wrap2Content1   {
     display: flex;
-    background-image: url(/img/obraCivil.png);
+    background-image: url(img/obraCivil.png);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -249,7 +249,7 @@ body    {
 
 .wrap2Content2   {
     display: flex;
-    background-image: url(/img/tratamientoAgua.png);
+    background-image: url(img/tratamientoAgua.png);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -259,7 +259,7 @@ body    {
 
 .wrap2Content3   {
     display: flex;
-    background-image: url(/img/conduccionAgua.png);
+    background-image: url(img/conduccionAgua.png);
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
