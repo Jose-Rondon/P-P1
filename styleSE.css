@@ -1,0 +1,364 @@
+@import "normailze.css";
+
+:root   {
+    --lighter-blue: hsla(216, 50%, 80%, 1);
+    --light-blue: hsla(216, 41%, 70%, 1);
+    --dark-blue: hsla(216, 41%, 30%, 1);
+    --dark-gray: hsla(0, 0%, 10%, 1);
+    --mid-gray: hsla(0, 0%, 20%, 1);
+    --mid-blue: hsla(196, 68%, 41%, 1);
+    --light-gray: hsla(180, 1%, 70%, 1);
+    --lighter-gray: hsla(180, 1%, 90%, 1);
+    --orange: rgb(255, 166, 97);
+}
+
+html    {
+    min-height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+body    {
+    display: flex;
+    flex-flow: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--dark-gray);
+    height: 40px;
+    max-width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    place-items: center;
+    padding: 5px;
+}
+
+.navbar svg {
+    margin: auto;
+    fill: var(--lighter-blue)
+}
+
+.navbarLogo {
+    display: flex;
+    place-items: center;
+    margin: 0;
+}
+
+.iconHide   {
+    display: none;
+}
+
+.iconButton   {
+    position: relative;
+    display: flex;
+    width: 40x;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: transparent;
+}
+
+.buttonNav   {
+    display: flex;
+    margin: 0;    
+    width: 40px;
+    height: 40px;
+    fill: var(--lighter-blue);
+}
+
+.buttonNav:hover    {
+    cursor: pointer;
+    fill: var(--orange);
+    transition-duration: .4s;
+}
+
+.iconHide:checked ~ .iconButton .buttonNav  {
+    fill: var(--orange);
+}
+
+.iconHide:checked ~ .iconButton svg rect:first-child  {
+    animation-name: buttonNav;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.iconHide:checked ~ .iconButton svg rect:nth-child(2)  {
+    animation-name: buttonNav1;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.iconHide:checked ~ .iconButton svg rect:last-child  {
+    animation-name: buttonNav2;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.iconHide:checked ~ .iconButton .navMenu  {
+    transition-duration: .4s;
+    transform: scale(1,1);
+}
+
+.linksMenu   {
+    opacity: 0;
+}
+
+.iconHide:checked ~ .iconButton .navMenu > .linksMenu {
+    opacity: 1;
+}
+
+.navMenu   {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    margin-top: 5px;
+    flex-direction: column;
+    right: -5px;
+    transform: scale(1,0);
+    transform-origin: top;
+    background-color: var(--light-gray);
+}
+
+.linksMenu  {
+    padding: 15px 20px;
+    background-color: var(--light-gray);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.linksMenu:hover  {
+    background-color: var(--dark-gray);
+    color: var(--orange);
+    transition-delay: 0s;
+    transition-duration: .4s;
+}
+
+.wrap1  {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--mid-gray);
+}
+
+.wrap1Content   {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    margin-bottom: 55px;
+}
+
+.wrap1Img   {
+    display: flex;
+    max-width: 90%;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 1rem;
+}
+
+.wrap1Text  {
+    display: flex;
+    margin: 0 1rem 1rem 1rem;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    color: var(--light-gray);
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.wrap1Tittle  {
+    font-weight: bold;
+    line-height: 1.9rem;
+    color: var(--orange);
+}
+
+.wrap1Menu  {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--dark-gray);
+    padding: 5px 0;
+}
+
+.iconWrap1  {
+    fill: var(--lighter-blue);
+    opacity: .3;
+}
+
+#iconWrap2  {
+    fill: var(--dark-gray);
+    transition-duration: .4s;
+}
+
+#iconWrap2:hover    {
+    cursor: pointer;
+}
+
+.iconWrap1:hover    {
+    fill: var(--orange);
+    transition-duration: .4s;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.wrap2  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--dark-gray);
+    gap: 1rem;
+}
+
+.wrap2Content1   {
+    position: relative;
+    display: flex;
+    background-image: url(/img/obraCivil.png);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 23rem;
+    overflow: scroll;
+}
+
+.wrap2Content2   {
+    position: relative;
+    display: flex;
+    background-image: url(/img/tratamientoAgua.png);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 23rem;
+    overflow: scroll;
+}
+
+.wrap2Content3   {
+    position: relative;
+    display: flex;
+    background-image: url(/img/conduccionAgua.png);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 23rem;
+    overflow: scroll;
+}
+
+.wrap2Info  {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    background-color:hsla(0, 0%, 20%, .75)
+}
+
+.wrap2Tittle    {
+    color: var(--orange);
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+    text-align: center;
+}
+
+.wrap2Text  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--lighter-gray);
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.wrap2TextLi    {
+    margin-left: 2rem;
+    color: white;
+    line-height: 1.4rem;
+}
+
+.wrap3  {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--mid-gray);
+    padding: 3rem 1rem;
+}
+
+.wrap3Content   {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    place-items: center;
+}
+
+.wrap3Tittle {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.wrap3Text  {
+    font-size: 1rem;
+    color: var(--light-gray);
+}
+
+.contactos  {
+    display: flex;
+    place-items: center;
+    gap: 1rem;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-gray);
+}
+
+.footerText {
+    font-size: 0.75rem;
+    color: var(--light-gray);
+}
+
+
+@keyframes buttonNav {
+    0% {transform: rotate(0deg) translate(0);}
+    100% {transform: rotate(45deg) translate(20%,-23%);}
+}
+
+@keyframes buttonNav1   {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes buttonNav2   {
+    0% {transform: rotate(0deg) translate(0);}
+    100% {transform: rotate(-45deg) translate(-50%,-9%);}
+}
