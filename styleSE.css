@@ -239,9 +239,10 @@ body    {
 
 .wrap2Content1   {
     display: flex;
+    width: 100%;
     background-image: url(img/obraCivil.png);
     background-position: center;
-    background-size: auto 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 23rem;
     overflow: scroll;
@@ -249,9 +250,10 @@ body    {
 
 .wrap2Content2   {
     display: flex;
+    width: 100%;
     background-image: url(img/tratamientoAgua.png);
     background-position: center;
-    background-size: auto 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 23rem;
     overflow: scroll;
@@ -259,9 +261,10 @@ body    {
 
 .wrap2Content3   {
     display: flex;
+    width: 100%;
     background-image: url(img/conduccionAgua.png);
     background-position: center;
-    background-size: auto 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 23rem;
     overflow: scroll;
@@ -269,6 +272,7 @@ body    {
 
 .wrap2Info  {
     display: flex;
+    width: 100%;
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
