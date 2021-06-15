@@ -66,9 +66,36 @@ body    {
     display: none;
 }
 
-.iconButton   {
+.buttonNav0  {
     position: relative;
     display: flex;
+    margin-right: 0;
+    margin-left: auto;
+    height: 40px;
+    place-items: center;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    background-color: var(--mid-gray);
+}
+
+.buttonNav0 a{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    text-decoration: none;
+    color: var(--lighter-blue);
+    font-weight: bold;
+    gap: 1rem;
+    transition-duration: .4s;
+}
+
+.buttonNav0:hover a{
+    color: var(--orange);
+}
+
+.iconButton   {
+    position: relative;
+    display: None;
     width: 40x;
     height: 40px;
     margin-left: auto;
@@ -77,7 +104,7 @@ body    {
 }
 
 .buttonNav   {
-    display: flex;
+    display: none;
     margin: 0;    
     width: 40px;
     height: 40px;
