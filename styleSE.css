@@ -552,6 +552,10 @@ body    {
         font-size: calc(0.6rem + 1vw);
         line-height: 1.5rem;
     }
+    .contactosIcon:hover    {
+        transform: scale(1.1);
+        transition-duration: .4s;
+    }
 }
 
 @media (min-width: 820px)   {
