@@ -24,7 +24,7 @@ onload = function() {
 
 function slideshow() {
     slide = setInterval(slideshow1, 5000);
-    document.getElementById("iconWrap2").setAttribute("style", "fill: #1A1A1A;");
+    document.getElementById("iconWrap2").setAttribute("style", "opacity: 0;");
 }
 
 function scrollSlideF() {
@@ -36,7 +36,7 @@ function scrollSlideF() {
     } else {
         x.scrollBy({ left: (z), behavior: 'smooth' });
     }
-    document.getElementById("iconWrap2").setAttribute("style", "fill: #B3C7E6;");
+    document.getElementById("iconWrap2").setAttribute("style", "fill: #B3C7E6; opacity: 1;");
 }
 
 function scrollSlideR() {
@@ -48,5 +48,5 @@ function scrollSlideR() {
     } else {
         x.scrollBy({ left: (z * -1), behavior: 'smooth' });
     }
-    document.getElementById("iconWrap2").setAttribute("style", "fill: #B3C7E6;");
+    document.getElementById("iconWrap2").setAttribute("style", "fill: #B3C7E6; opacity: 1;");
 }
