@@ -183,6 +183,7 @@ body    {
 
 .wrap1Img1  {
     max-width: 100%;
+    background-color: var(--mid-gray);
 }
 
 .wrap1Tittle  {
@@ -201,8 +202,9 @@ body    {
     flex-direction: column;
     gap: 1rem;
     line-height: 1.3rem;
-    background-color: rgba(0, 0, 0, 0.3);
     padding: 1rem;
+    background-color: hsla(0, 0%, 10%, 1);
+
 }
 
 .wrap1Menu  {
@@ -467,14 +469,14 @@ body    {
         margin: 0;
         padding: 0;
         width: 70%;
-        max-height: 100%;
         overflow: hidden;
     }
     .wrap1Img1  {
         border-radius: 0;
         max-width: 200%;
-        width: 150%;
+        width: 170%;
         flex-shrink: 0;
+        background-color: var(--dark-gray);
     }
     .wrap1Text  {
         width: 30%;
@@ -484,6 +486,7 @@ body    {
         border-radius: 0;
         justify-content: center;
         align-items: center;
+        background-color: var(--mid-gray);
     }
     .wrap1Menu  {
         margin-left: 2.5%;
