@@ -242,7 +242,7 @@ body    {
     width: 100%;
     background-image: url(img/obraCivil.png);
     background-position: center;
-    background-size: 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     height: 23rem;
     overflow: scroll;
@@ -253,7 +253,7 @@ body    {
     width: 100%;
     background-image: url(img/tratamientoAgua.png);
     background-position: center;
-    background-size: 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     height: 23rem;
     overflow: scroll;
@@ -264,7 +264,7 @@ body    {
     width: 100%;
     background-image: url(img/conduccionAgua.png);
     background-position: center;
-    background-size: 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     height: 23rem;
     overflow: scroll;
