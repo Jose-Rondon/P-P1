@@ -324,8 +324,10 @@ body    {
 
 .contactos  {
     display: flex;
-    place-items: center;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .footer {
