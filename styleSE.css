@@ -170,12 +170,14 @@ body    {
 }
 
 .wrap1Img   {
+    justify-content: center;
+    place-items: center;
     display: flex;
     margin: 1rem 1rem 0 1rem;
 }
 
 .wrap1Img1  {
-    max-width: 90%;
+    max-width: 94%;
     border-radius: 1rem;
 }
 
@@ -299,6 +301,10 @@ body    {
     line-height: 1.1rem;
 }
 
+.wrap2Text p{
+    margin-left: 2rem;
+}
+
 .wrap2TextLi    {
     margin-left: 2rem;
     color: white;
@@ -325,6 +331,7 @@ body    {
 }
 
 .wrap3Text  {
+    text-align: center;
     font-size: 1rem;
     color: var(--light-gray);
 }
@@ -371,7 +378,7 @@ body    {
         margin-top: 6%;
     }
     .wrap1Img1{
-        max-width: 90%;
+        max-width: 96%;
     }
     .wrap1Text  {
         margin-bottom: 6%;
@@ -387,7 +394,6 @@ body    {
         text-align: center;
         width: 30ch;
     }
-
 }
 
 @media (min-width: 540px) {
@@ -412,7 +418,7 @@ body    {
         margin-top: 8%;
     }
     .wrap1Img1{
-        max-width: 90%;
+        max-width: 96%;
     }
     .wrap1Text  {
         margin-bottom: 8%;
