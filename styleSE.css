@@ -176,6 +176,12 @@ body    {
     border-radius: 1rem;
 }
 
+.wrap1Tittle  {
+    font-weight: bold;
+    line-height: 1.5rem;
+    color: var(--orange);
+}
+
 .wrap1Text  {
     display: flex;
     margin: 0 1rem 1rem 1rem;
@@ -185,16 +191,10 @@ body    {
     color: var(--light-gray);
     flex-direction: column;
     gap: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
     padding: 1rem;
-}
-
-.wrap1Tittle  {
-    font-weight: bold;
-    line-height: 1.9rem;
-    color: var(--orange);
 }
 
 .wrap1Menu  {
@@ -288,8 +288,8 @@ body    {
     flex-direction: column;
     gap: 1rem;
     color: var(--lighter-gray);
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: .92rem;
+    line-height: 1.1rem;
 }
 
 .wrap2TextLi    {
