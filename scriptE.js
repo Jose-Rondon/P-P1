@@ -50,3 +50,13 @@ function scrollSlideR() {
     }
     document.getElementById("iconWrap2").setAttribute("style", "fill: #B3C7E6; opacity: 1;");
 }
+
+function telefonoShow()  {
+    var x = document.getElementById("telefono");
+    x.setAttribute("style", "display: flex;");
+}
+
+function cerrar()   {
+    var x = document.getElementById("telefono");
+    x.setAttribute("style", "display: none;");
+}
