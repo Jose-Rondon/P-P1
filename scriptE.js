@@ -53,10 +53,14 @@ function scrollSlideR() {
 
 function telefonoShow()  {
     var x = document.getElementById("telefono");
-    x.setAttribute("style", "display: flex;");
+    var y = document.getElementById("telefonoContent");
+    x.setAttribute("style", "transform: scale(1);");
+    y.setAttribute("style", "transition-duration: 1.5s; opacity: 1;");
 }
 
 function cerrar()   {
     var x = document.getElementById("telefono");
-    x.setAttribute("style", "display: none;");
+    var y = document.getElementById("telefonoContent");
+    x.setAttribute("style", "transform: scale(1,0);");
+    y.setAttribute("style", "transition-duration: 0s; opacity: 0;");
 }

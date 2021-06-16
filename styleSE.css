@@ -272,6 +272,8 @@ body    {
     width: 100%;
     background-color: var(--dark-gray);
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrap2Content1   {
@@ -376,6 +378,10 @@ body    {
     flex-wrap: wrap;
 }
 
+.relative   {
+    position: relative;
+}
+
 .buttonTeleX    {
     position: absolute;
     margin-top: -12%;
@@ -383,19 +389,30 @@ body    {
 }
 
 .telefono   {
-    display: none;
+    display: flex;
+    transform: scale(1,0);
+    transform-origin: top;
     position: absolute;
-    color: white;
     flex-direction: column;
     place-items: center;
-    gap: 1rem;
     background-color: hsla(0, 0%, 10%, .9);
     padding: 3rem;
     width: 20ch;
-    transform: translate(-40.5%, -25%);
+    margin-top: -70%;
+    margin-left: -193%;
     transition-duration: .4s;
     border: solid var(--orange) 3px;
+    z-index: 10;
+}
+
+.telefonoContent    {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
     line-height: 1.5rem;
+    color: white;
+    gap: 1rem;
+    opacity: 0;
 }
 
 .footer {
