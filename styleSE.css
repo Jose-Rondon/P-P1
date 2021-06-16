@@ -376,6 +376,28 @@ body    {
     flex-wrap: wrap;
 }
 
+.buttonTeleX    {
+    position: absolute;
+    margin-top: -12%;
+    margin-left: 80%;
+}
+
+.telefono   {
+    display: none;
+    position: absolute;
+    color: white;
+    flex-direction: column;
+    place-items: center;
+    gap: 1rem;
+    background-color: hsla(0, 0%, 10%, .9);
+    padding: 3rem;
+    width: 20ch;
+    transform: translate(-40.5%, -25%);
+    transition-duration: .4s;
+    border: solid var(--orange) 3px;
+    line-height: 1.5rem;
+}
+
 .footer {
     display: flex;
     width: 100%;
