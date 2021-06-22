@@ -20,6 +20,7 @@ function slideshow1() {
 
 onload = function() {
     slide = setInterval(slideshow1, 5000);
+    document.getElementById("iconWrap2").setAttribute("style", "opacity: 0;");
 }
 
 function slideshow() {
